@@ -1,0 +1,139 @@
+.fc-timegrid-event {
+  padding-block: 0.5rem;
+  /* margin: 0.5rem; */
+  border: none;
+  border-left: 5px solid #9d78bd;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25) !important;
+}
+.fc-event-main-frame {
+  color: #000;
+}
+.fc {
+  font-family: "Inria Sans", "sans-serif";
+  font-weight: lighter;
+  --fc-today-bg-color: #9d78bd34;
+}
+.fc-toolbar-title {
+  font-size: 1.2rem !important;
+  font-weight: 400;
+}
+.fc .fc-timegrid-col.fc-day-today {
+  background: #9d78bd13;
+}
+
+.fc-timegrid-now-indicator-line {
+  border-width: 3px 0 0 !important;
+}
+
+.fc-col-header > colgroup > col {
+  /* background: #9d78bda8; */
+  border: none;
+  padding: 1rem;
+}
+.fc-timegrid-slot-label {
+  border: none !important;
+}
+
+.fc-scroller-harness > .fc-scroller::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.fc-scroller-harness > .fc-scroller::-webkit-scrollbar-track {
+  border-radius: 0.1em;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* .fc-scroller-harness > .fc-scroller::-webkit-scrollbar-thumb {
+  background-color: #9d78bd;
+  outline: 1px solid slategrey;
+} */
+
+.fc-event-time {
+  font-size: 0.9rem !important;
+}
+.fc-event-title {
+  font-size: "12px";
+}
+.fc .fc-col-header-cell-cushion {
+  width: 100%;
+  text-align: center;
+  font-size: "12px";
+  padding-block: 0.5rem;
+}
+
+.fc .fc-timegrid-slot-minor {
+  border-top-style: none;
+}
+
+.fc .fc-button-primary:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+.fc-button-group .fc-button {
+  color: rgb(0, 0, 0);
+  background: white !important;
+  border: 2px solid #9d78bd !important;
+  padding: 0.2rem 1rem;
+}
+.fc-button-group .fc-button:hover {
+  background: #9d78bdcb !important;
+}
+
+.fc-button-group .fc-button-active {
+  background: #9d78bd !important;
+}
+
+table > colgroup > col {
+  width: 70px !important;
+}
+.fc-direction-ltr .fc-timegrid-slot-label-frame {
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .fc-toolbar-title {
+    font-size: 1.1rem !important;
+    font-weight: 400;
+  }
+  .fc-button-group .fc-button {
+    border: 1px solid #9d78bd !important;
+    padding: 0.1rem 0.7rem;
+  }
+
+  .fc .fc-toolbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .fc-timegrid-event {
+    padding-block: 0.1rem;
+    border-left: 2px solid #9d78bd;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25) !important;
+  }
+  .fc-event-time {
+    font-size: 0.8rem !important;
+  }
+  .fc-event-title {
+    font-size: 0.8rem;
+  }
+  table > colgroup > col {
+    width: 32px !important;
+    padding-inline: 0.1rem;
+  }
+  .fc .fc-timegrid-axis-cushion,
+  .fc .fc-timegrid-slot-label-cushion {
+    padding-inline: 0rem;
+    font-size: 0.8rem;
+  }
+  .fc .fc-col-header-cell-cushion {
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+    padding-block: 0.1rem;
+  }
+  .fc-direction-ltr .fc-timegrid-slot-label-frame {
+    padding-left: 1px;
+    text-align: left;
+  }
+}
